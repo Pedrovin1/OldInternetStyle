@@ -10,16 +10,16 @@ body{
                                         #F5A9B8, #5BCEFA);
 }
 
-table{
-    table-layout: fixed;
-    border-style: double;
+div#maindiv{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    gap: 1.2vw;
+    justify-content: center;
 
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
 }
-
-td{
-    border-style: groove;
-}
-
 
 
 /***************** Header *************************/
@@ -62,11 +62,14 @@ div#tituloNiverBox > :nth-child(2):hover{
 
 /******************* Side Columns Formatting ***********************/
 
-td:has(div#sideColumn){
+div#maindiv > div:has(div#sideColumn){
     vertical-align: top;
 }
 
-td > div#sideColumn{
+div#maindiv > div > div#sideColumn{
+    justify-self: center;
+
+
     padding-top: 5%;
     padding-bottom: 5%;
 
@@ -77,13 +80,13 @@ td > div#sideColumn{
     gap: 3vh;
 }
 
-td > div#sideColumn > img{
+div#maindiv > div > div#sideColumn > img{
     width: 8vw;
     display: block;
 }
 
-td > div#sideColumn > img.topheart,
-td > div#sideColumn > img.bonfire {
+div#maindiv > div > div#sideColumn > img.topheart,
+div#maindiv > div > div#sideColumn > img.bonfire {
     width: min(100px, 8vw);
     display: block;
 }
