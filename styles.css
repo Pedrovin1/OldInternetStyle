@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
-
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -261,6 +259,15 @@ img.slug{
     margin-bottom: 2vh;
 }
 
+img.slug:hover{
+    cursor: pointer;
+}
+
+img.slug:active{
+    opacity: 80%;
+}
+
+
 img#severance{
     width: auto;
     margin-top: 2vh;
@@ -481,6 +488,51 @@ div#finalizacao{
 div#finalizacao > img{
     width: 80vw;
 
+}
+/***********youvegot mail*************/
+div#oldmail{
+    position: relative;    
+}
+
+div#oldmail > img:hover{
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+div#oldmail > img{
+    position: fixed;
+
+    width: 10vw;
+
+    top: 100px;
+    right: -100%;
+    z-index: 100;  
+}
+
+div#oldmail > p#mailmessage{
+    position: fixed;
+    
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+    padding: 1em;
+
+    top: 95px;
+    right: 12%;
+
+    z-index: 100;
+
+    display: none;
+}
+
+.mailappears{
+    animation: mailappears 3s ease-out 0s 1 normal forwards;
+}
+
+@keyframes mailappears {
+    from {right: -100%;}
+    to {right: 1%;}
 }
 
 /*************MSn notif****************/

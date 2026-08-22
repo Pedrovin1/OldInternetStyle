@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    background: linear-gradient(
+        45deg, #bf953f 0%, #fcf6ba 25%, 
+        #b38728 50%, #fbf5b7 75%, #aa771c 100%)
+}
+
+h1, h2, p{
+    font-family: "Comic Relief", Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 5vw;
+}
+
+div#titulo{
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+div#titulo > p#amarelo{
+    text-align: center;
+    background-color: yellow;
+    padding: 1em;
+
+}
+
+div#topicos{
+    text-align: center;
+}
+
+div#topicos > div{
+    display: flex;
+    gap: 2.5%;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+div#topicos > div > img{
+    height: 15vh;
+}
+
+div#topicos > p{
+    text-align: left;
+}
+
+/*pluribus*/
+div#topicos > div#pluribusimgs:has(:nth-child(2):active) ~ div > p{
+    position: relative;
+    display: block;
+}
+div#topicos > div#hiddenText > p{
+    position: absolute;
+    display: none;
+}
+
+div#topicos > div#hiddenText{
+    justify-content: center;
+    padding-left: 5vw;
+}
+
+div#topicos > div#pluribusimgs{
+    margin-top: 2.5vh;
+}
+
+div#topicos > div#pluribusimgs > :nth-child(2):hover{
+    cursor: grab;
+}
+div#topicos > div#pluribusimgs > :nth-child(2):active{
+    cursor: grabbing;
+}
+
+/*Sol*/
+
+div#ycircle{
+    width: 10em;
+    height: 10em;
+
+    background-color: yellow;
+    border-radius: 50%;
+    justify-self: center;
+    margin-top: 3vh;
+}
+
+div#topicos > img, 
+div#topicos > a > img {
+    width: min(80%, 500px);
+    margin-top: 4vh;
+    margin-bottom: 6vh;
+}

@@ -19,3 +19,24 @@ function msnNotification(){
     const msnNotifIcon = document.getElementById("msnNotif47");
     msnNotifIcon.style.opacity = "100%";
 }
+
+function sendMail(){
+    const mail = document.getElementById("oldmailimg");
+    const sound = new Audio("./assets/yougotmail.mp3")    
+    
+    if(!mail.classList.contains('mailappears'))
+    {
+        mail.classList.add('mailappears');
+        mail.addEventListener('animationend', () => { sound.play() }, { once: true })
+    }
+}
+
+function toggleMail(){
+    const mailmessage = document.getElementById('mailmessage');
+    if(mailmessage.style.display.toString() == 'none' ||
+        mailmessage.style.display.toString() == ''){
+        mailmessage.style.display = 'block'
+    }else{
+        mailmessage.style.display = 'none'
+    }
+}
