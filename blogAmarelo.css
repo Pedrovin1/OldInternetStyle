@@ -55,6 +55,20 @@ div#topicos > div > img{
 
 div#topicos > p{
     text-align: left;
+    padding-left: 2vw;
+}
+
+a > img{
+    border-style: dashed;
+    border-color: transparent;
+    box-sizing:content-box;
+    border-width: 5px;
+
+}
+
+a > img:hover{
+    border-color: yellow;
+    opacity: 90%;    
 }
 
 /*pluribus*/

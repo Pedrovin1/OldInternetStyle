@@ -475,6 +475,58 @@ div#lobbyBlog button{
     width: 100%;
     height: 10vh;
 }
+
+/*********Deborah ad**********/
+div#adPlacer{
+    display: flex;
+    gap: 1.2vw;
+}
+
+div.addeborah {
+    align-self: end;
+}
+
+div.addeborah > div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.3em;
+
+    margin-top: 5vh;
+}
+
+div.addeborah > div > a{
+    display: contents;
+}
+
+div.addeborah > div > a > img{
+    width: 20vw;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0.5vw;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+div.addeborah > div > p{
+  background-color: #FFFFFF;
+  text-align: start;
+  color: #0aa5e2;
+  
+  padding: 0px;
+  margin: 0px;
+}
+
+div.addeborah > div > button#adbutton{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    justify-self: end;
+
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
 /**********Finalizacao***********/
 div#finalizacao{
     display: flex;
